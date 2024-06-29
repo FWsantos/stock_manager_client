@@ -1,18 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import axios from 'axios'
+import Navbar from "./components/Navbar";
+import TableList from "./components/TableList";
 
 function App() {
-  
-  axios.get('http://localhost:3001/products').then((response) => {
-    console.log(response.data)
-  });
-
   return (
     <>
-      
+      <Navbar />
+      <TableList />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
